@@ -9,11 +9,13 @@ export default function Forms(props) {
         let newtext=text.toUpperCase()
         // setText("this value is changed by on change handler")
         setText(newtext)
+        props.showAlert("Converted to upper case","Success")
     }
     const captalize=()=>{
       // return str.charAt(0).toUpperCase() + str.slice(1);
       let newText = text.split(" ").map(el=>el.charAt(0).toUpperCase()+ el.slice(1)).join(" ")
      setText(newText);
+     props.showAlert("String has been captalize","Success")
 
     }
     const handleLoClick=()=>{
@@ -21,6 +23,7 @@ export default function Forms(props) {
         let newtext=text.toLowerCase()
         // setText("this value is changed by on change handler")
         setText(newtext)
+        props.showAlert("Converted to lower case","Success")
     }
     const handleOnChange=(event)=>{
         // console.log("uper case was on change")
