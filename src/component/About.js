@@ -7,10 +7,11 @@ export default function About() {
         backgroundColor:"white"
     })
     const toggleStyle=()=>{
-            if(myStyle.color == "black"){
+            if(myStyle.color === "black"){
                 newStyle({
                     color:"White",
-                    backgroundColor:"black",
+                    // backgroundColor:"black",
+                    backgroundColor:"White",
                     
                 })
                 btnState("Enable Light Mode");
