@@ -6,7 +6,7 @@ import { useState } from "react";
 import Alert from "./component/Alert";
 import About from "./component/About";
 // import { Route } from "react-router-dom";
-import { Router } from "react-router-dom";
+// import { Router } from "react-router-dom";
 // import { BrowserRouter } from "react-router-dom";
 
 import React from "react";
@@ -14,7 +14,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Link
+  
 } from "react-router-dom"
 
 
