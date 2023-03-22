@@ -56,12 +56,12 @@ const showAlert=(message,type)=>{
   <>
   <BrowserRouter>
 
-    <Navbar title="TextUtils" headerName="About Us" mode={mode} toggleMode={toggleMode}/>
+    <Navbar title="Text Converter" headerName="About Us" mode={mode} toggleMode={toggleMode}/>
     <Alert alert={alert}/>
     <div className="container my-3">
 
     <Routes>
-        <Route path="/about" element={< About/>} />
+        <Route path="/about" element={< About  mode={mode}/>} />
           
           <Route path="/"
           element={<Forms showAlert={showAlert} heading="Enter your data to change" mode={mode} />}/>
